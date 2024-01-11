@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SerenadeSphere</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <div class="main">
+  	<p id="logo"><i class="fa fa-music"></i>Music</p>
+    
+        <!-- show_song_number -->
+        <div class="show_song_no">
+          <p id="present">1</p>
+          <p>/</p>
+          <p id="total">5</p>
+        </div>
+
+
+    <!--- left part --->
+     <div class="left">
+
+      <!--- song img --->
+      <img id="track_image">
+         <div class="volume">
+            <p id="volume_show">90</p>
+            <i class="fa fa-volume-up" aria-hidden="true" onclick="mute_sound()" id="volume_icon"></i>
+            <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">  
+         </div>
+
+     </div>
+ 
+     <!--- right part --->
+  	 <div class="right">
+       <!--- song title & artist name --->
+       <div class="song_detail">
+           <p id="title">title.mp3</p>
+           <p id="artist">Artist name</p>
+       </div>
+
+      <!--- middle part --->
+  	 	<div class="middle">
+  	       <button onclick="previous_song()" id="pre"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+      	   <button onclick="justplay()" id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
+  	       <button onclick="next_song()" id="next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+  	   </div>
+
+       <!--- song duration part --->
+        <div class="duration">
+           <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+           <button id="auto" onclick="autoplay_switch()">Auto &nbsp;<i class="fa fa-circle-o-notch" aria-hidden="true"></i></button>
+        </div>
+           
+  	</div>
+
+
+  </div>
+   
+  <!--- Add javascript file --->
+  <script src="main.js"></script>
+
+</body>
+<div class="lyrics-container">
+    <!-- Your lyrics content goes here -->
+    <h1>Eto lyrics bubby waahhaha
+    </h1>
+
+    <p>
+      Verse 1<br>
+      I still remember the first time that we met<br>
+      You looked into my eyes and I looked so hesitant<br>
+    </p>
+    
+    <p>
+        Verse 2<br>
+        Then you smiled and asked if I was alright<br>
+        And that to me felt so nice, knowing that someone cared for me<br>
+      </p>
+    
+      <p>
+        Verse 3<br>
+        Then we became friends<br>
+        We talked all night, all stories shared<br>
+        Then I said to myself "I wish this would never end."<br>
+      </p>
+
+      <p>
+        Pre Chorus<br>
+        So hold my hand and I will never think twice<br>
+        
+      </p>
+
+    <p>
+      Chorus<br>
+      I will love you darling all my days<br>
+      Forever I will stay here, forever by your side<br>
+      I will hold you until the end of time<br>
+      I will make you smile<br>
+      My heart will always know that you are my Home<br>
+    </p>
+
+   
+    <p>
+        Verse 4<br>
+        I've never imagined in a millions years<br>
+        That someone like you would come into my life<br>
+        And never leave my side<br>
+
+      </p>
+
+      <p>
+        Verse 5<br>
+        Knowing that I'm worthless<br>
+        And for me  you are so perfect<br>
+        Perfect in every way<br>
+        Perfect in every way<br>
+        All I wanna say<br>
+
+      </p>
+
+      <p>
+        Bridge<br>
+        Don't be scared about tomorrow I'll be here<br>
+        And when the future seems unclear remember dear<br>
+        In every season of our lives I won't lose sight of you.<br>
+        I promise you.I promise you.<br>
+      </p>
+  </div>
+</html>
+
+
+
